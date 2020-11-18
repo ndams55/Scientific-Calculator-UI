@@ -1,0 +1,101 @@
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#calculatrice{
+	width:70%;
+	margin-top: 3%;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 1px 1px 11px 2px rgba(69,69,70,0.3);
+	display:flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#ecran{
+	margin-top:20px;
+	margin-bottom: 15px;
+	width: 80%;
+	background-color:rgba(69,69,70,0.102);
+	border-radius: 15px;
+	padding: 20px 60px 20px 20px;
+	display:block;
+}
+
+#operation{
+	text-align: right;
+	font-size: 20px;
+	color: #524949;
+	margin-bottom: 35px;
+}
+
+#result {
+	text-align: right;
+	font-size: 25px;
+	color: #312c2c;
+}
+
+.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width:85%;
+	margin-bottom: 10px;
+}
+
+.touche{
+	text-align: center;
+	background-color:rgba(116,30,212,0.202)/*rgba(104, 104, 139, 0.102)*/;
+	padding:10px;
+	margin-right:15px;
+	font-size:18px;
+	border-radius: 5px;
+}
+
+#rad{
+	text-align: center;
+	background-color:rgba(69,69,70,0.102);
+	padding:10px;
+	font-size:18px;
+	border-radius: 5px 0 0 5px;
+}
+
+#deg{
+	text-align: center;
+	background-color:rgba(69,69,70,0.102);
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:10px;
+	margin-right:15px;
+	font-size:18px;
+	color: #524949;
+	border-radius: 0px 5px 5px 0;
+}
+
+#rad:hover , #deg:hover{
+	cursor:pointer;
+	background-color:rgba(115, 30, 212, 0.404);
+}
+
+#separator{
+	float:left;
+}
+
+.number{
+	background-color:rgba(69,69,70,0.102);
+}
+
+.equalTouche{
+	background-color:rgba(50, 50, 197, 0.699);
+	color:white;
+	font-size:30px;
+	font-weight: bold;
+}
+
+.touche:hover{
+	background-color:rgba(115, 30, 212, 0.404);
+}
